@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "b9f0e651-0000-403c-9a1c-000000000000",
+    "name": "School Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"ABC High School\",\n  \"address\": \"123 Main St, City\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/addSchool",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Schools by Distance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/listSchools?latitude=12.9716&longitude=77.5946",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "12.9716"
+            },
+            {
+              "key": "longitude",
+              "value": "77.5946"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    }
+  ]
+} 
