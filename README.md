@@ -73,6 +73,6 @@ The API can be deployed to any Node-compatible platform (e.g., Render, Railway, 
 
 ### Deliverables
 
-1. **Source code repository** – this GitHub repo: <REPLACE_WITH_REPO_LINK>
+1. **Source code repository** – this GitHub repo: [<https://github.com/shivenpatro/school-management-api>](https://github.com/shivenpatro/school-management-api)
 2. **Live API endpoints** – e.g., `https://your-app.onrender.com/addSchool` and `/listSchools` (replace with actual URL).
 3. **Postman collection** – provided in the repository; also share via email or link. 
